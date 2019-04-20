@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', serif; 
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Header/Navigation */
+
+.header {
+    margin-bottom: 32px;
+}
+
+.navigation {
+    padding: 72px 0;
+}
+
+.navigation-menu {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navigation-menu-item {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.navigation-menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+.navigation-menu-item a:hover,
+.navigation-menu-item a:focus {
+    color: #03a9f4;
+}
+
+.navigation-menu-item1 {
+    margin-left: 165px;
+}
+
+.navigation-menu-item2 {
+    margin-left: 120px;
+}
+
+.navigation-menu-item3 {
+    margin-left: 103px;
+}
+
+.navigation-menu-item4 {
+    margin-left: 96px;
+}
+
+/* Articles*/
+
+.article-section {
+   margin-bottom: 54px;
+}
+
+.article-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.article-list li {
+    display: inline-block;
+}
+
+.article {
+    display: inline-block;
+    width: 420px;
+}
+
+.article-list li:nth-child(2n) {
+    margin-left: 60px;
+}
+
+.article-list li:nth-child(-n+4) {
+    margin-bottom: 140px;
+}
+
+.heading {
+    font-size: 14px;
+    line-height: 17px;
+    color: #b4ad9e; 
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.article h2 {
+    font-size: 30px;
+    line-height: 36px;
+    color: #626262;
+    padding-top: 26px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #626262;
+    padding-top: 34px;
+}
+
+/* Footer with button */
+
+.footer {
+    margin-bottom: 70px;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.button {
+    margin: 0;
+    padding: 25px 33px;
+    max-width: 165px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif; 
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+    cursor: pointer;
+}
