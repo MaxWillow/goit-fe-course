@@ -85,20 +85,19 @@ img {
 }
 
 .article-list {
-    display: inline-block;
     list-style: none;
     margin: 0;
     padding: 0;
     font-size: 0;
 }
 
-.article-list li {
+.article-list-item {
     display: inline-block;
 }
 
 .article {
-    display: inline-block;
     width: 420px;
+    vertical-align: top;
 }
 
 .article-list li:nth-child(2n) {
@@ -109,7 +108,7 @@ img {
     margin-bottom: 140px;
 }
 
-.heading {
+.article__heading {
     font-size: 14px;
     line-height: 17px;
     color: #b4ad9e; 
@@ -117,9 +116,8 @@ img {
     padding-top: 30px;
 }
 
-.article h2 {
+.article__headline {
     font-size: 30px;
-    line-height: 36px;
     color: #626262;
     padding-top: 26px;
 }
@@ -152,4 +150,17 @@ img {
     line-height: 24px;
     color: #626262;
     cursor: pointer;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; 
 }
