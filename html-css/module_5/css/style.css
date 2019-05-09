@@ -269,23 +269,23 @@ img {
 }
 
 .overlay-like {
-    background-image: url(/img/item_featured1.png);
+    background-image: url(../img/item_featured1.png);
     margin-right: 8px;
 }
 
 .overlay-share {
-    background-image: url(/img/item_featured2.png);
+    background-image: url(../img/item_featured2.png);
     margin-right: 8px;
 }
 
 .overlay-hold {
-    background-image: url(/img/item_featured3.png);
+    background-image: url(../img/item_featured3.png);
 }
 
 .overlay-cart {
     width: 166px;
     height: 50px;
-    background-image: url(/img/item_featured4.png);
+    background-image: url(../img/item_featured4.png);
     background-repeat: no-repeat;
     background-position: 6%;
     background-color: #323232;
