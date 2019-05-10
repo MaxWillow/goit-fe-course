@@ -159,6 +159,11 @@ img {
     line-height: 2.25;
 }
 
+.slider-ctrl:hover,
+.slider-ctrl:focus {
+    opacity: 1;
+}
+
 /* SECTION NEW COLLECTION */
 
 .new-collection {
@@ -206,24 +211,24 @@ img {
 
 .product-featured {
     display: inline-block;
-    height: 40px;
+    --h: 40px;
+    height: var(--h);
+    line-height: var(--h);
     font-weight: 900;
     font-size: 18px;
-    line-height: 1.77;
     color: #fff;
     text-transform: uppercase;
 }
 
 .product-name {
     width: 201px;
-    padding: 7px 14px;
+    padding: 0px 14px;
     background-color: #323232;
 }
 
 .product-price {
     width: 54px;
     background-color: #8c8c8c;
-    padding: 7px 0;
     text-align: center;
 }
 
