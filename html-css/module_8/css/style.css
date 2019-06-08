@@ -1,0 +1,198 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 320px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v19-latin/roboto-v19-latin-300.woff2') format('woff2'), 
+         url('../fonts/roboto-v19-latin/roboto-v19-latin-300.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-v19-latin/roboto-v19-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v13-latin/montserrat-v13-latin-regular.woff2') format('woff2'), 
+         url('../fonts/montserrat-v13-latin/montserrat-v13-latin-regular.woff') format('woff'); 
+}
+ 
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v13-latin/montserrat-v13-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v13-latin/montserrat-v13-latin-700.woff') format('woff');
+}
+
+/* REGISTR SECTION */
+
+.registr-section {
+    background-image: url(../img/site_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.registr-section-btn {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid transparent;
+    background: transparent;
+    padding: 12px 18px;
+}
+
+ .registr-section-btn:hover,
+ .registr-section-btn:focus {
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.site-headline {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.registr-section-text {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 0 50px;
+}
+
+.find-partner-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    background-color: #ff4e50;
+    border-radius: 30px;
+}
+
+/* PARTNER SECTION */
+
+.partner-section-headline {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #333333;
+    text-align: center;
+}
+
+.partner-list {
+    text-align: center;
+}
+
+.partner-image-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.partner-image-wrap::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3.5%;
+    right: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.partner-image-wrap1::after {
+    background-color: #ff4e50;
+    background-image: url(../img/photo1_icon.png);
+}
+
+.partner-image-wrap2::after {
+    background-color: #1cd7ad;
+    background-image: url(../img/photo2_icon.png);
+}
+
+.partner-image-wrap3::after {
+    background-color: #ffa507;
+    background-image: url(../img/photo3_icon.png);
+}
+
+.partner-image-wrap4::after {
+    background-color: #4e73db;
+    background-image: url(../img/photo4_icon.png);
+}
+
+.partner-name {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.partner-description {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #666666;
+}
+
+.more-partners-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    background: transparent;
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ff4e50;
+}
+
+.more-partners-btn:hover,
+.more-partners-btn:focus{
+    background: #ff4e50;
+    color: #fff;
+    border: 2px solid #93291e;
+}
