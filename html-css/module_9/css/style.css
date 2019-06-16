@@ -162,6 +162,7 @@ img {
     font-size: 14px;
     color: #333333;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .partner-description {
@@ -170,6 +171,7 @@ img {
     font-size: 14px;
     line-height: 1.25;
     color: #666666;
+    text-align: center;
 }
 
 .more-partners-btn {
