@@ -1,0 +1,179 @@
+@media (max-width: 767px) {
+/* REGISTR SECTION */
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+  
+    [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+        }
+
+    .container {
+        width: 320px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .registr-section {
+        padding-top: 20px;
+        padding-bottom: 140px;
+        margin-bottom: 72px;
+    }
+
+    .header-btn {
+        margin-bottom: 118px;
+    }
+   
+    .site-logo-wrap {
+        margin-bottom: 36px;
+    }
+
+    .site-logo {
+        display: block;
+    }
+
+    .site-logo-image {
+        margin: 0 auto;
+    }
+
+    .site-headline {
+        margin-bottom: 18px;
+    }
+
+    .registr-section-text {
+        margin-bottom: 20px;
+    }
+
+/* PARTNER SECTION */
+
+    .partner-section {
+        margin-bottom: 58px;
+    }
+
+    .partner-section-headline {
+        margin-bottom: 18px;
+    }
+
+    .partner-list-wrap {
+        margin-bottom: 28px;
+    }
+
+    .partner-list {
+        margin: 0;
+    }
+
+    .partner-list-item-wrap:not(:last-child) {
+        margin-bottom: 28px;
+    }
+}
+
+@media (min-width: 768px) {
+/* REGISTR SECTION */
+    .no-gutters {
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+    [class*="col-"] {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .container {
+        max-width: 748px;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .registr-section {
+        padding-top: 38px;
+        padding-bottom: 234px;
+        margin-bottom: 74px;
+    }
+
+    .tablet-desktop-header {
+        margin-bottom: 148px;
+    }
+
+    .site-headline {
+        font-size: 52px;
+        margin-bottom: 38px;
+    }
+    
+    .registr-section-text {
+        font-size: 24px;
+        margin-bottom: 34px;
+    }
+    
+/* PARTNER SECTION */
+
+    .partner-section {
+        margin-bottom: 40px;
+    }
+
+    .partner-list-wrap {
+        margin-bottom: 40px;
+    }
+
+    .partner-list {
+        margin: 0;
+    }
+
+    .partner-image-wrap::after {
+        right: 25%;
+    }
+
+    .partner-section-headline {
+        margin-bottom: 38px;
+    }
+
+    .partner-description  {
+        padding: 0 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* PARTNER SECTION */
+    .partner-list-item-wrap:nth-child(-n+2) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+/* REGISTR SECTION */
+
+    .container {
+        max-width: 940px;
+    }
+
+    .registr-section {
+        padding-top: 36px;
+    }
+
+    .tablet-desktop-header .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+    }
+  
+    .tablet-desktop-header [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+/* PARTNER SECTION */
+
+    .partner-section {
+        margin-bottom: 72px;
+    }
+
+    .partner-image-wrap::after {
+        right: 20%;
+    }
+
+    .partner-description {
+        padding: 0;
+    }
+}
