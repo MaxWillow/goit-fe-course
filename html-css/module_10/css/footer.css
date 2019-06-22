@@ -1,0 +1,62 @@
+.footer__content-wrapper {
+    min-height: 62px;
+    border-top: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.footer__legal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer__legal--who-made {
+    color: #f38181;
+}
+
+.footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.footer__email-input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    padding: 14px 12px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer__email-input::-webkit-input-placeholder {
+    color: #ccc;
+    text-transform: capitalize;
+}
+.footer__email-input:-ms-input-placeholder {
+    color: #ccc;
+    text-transform: capitalize;
+}
+.footer__email-input::-ms-input-placeholder {
+    color: #ccc;
+    text-transform: capitalize;
+}
+.footer__email-input::placeholder {
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.footer__btn {
+    border: none;
+    background-color: #95e1d3;
+}

@@ -1,0 +1,171 @@
+@import "nav.css";
+@import "section-headline.css";
+@import "btn.css";
+@import "member-card.css";
+@import "footer.css";
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* WELCOME SECTION*/
+
+.welcome-section {
+    margin-bottom: 54px;
+    padding-bottom: 230px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9))),
+                      url(../img/banner.jpg);
+    background-image: -webkit-linear-gradient(bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner.jpg);
+    background-image: linear-gradient(to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner.jpg);
+    background-size: cover;
+}
+
+.welcome-section__nav {
+    padding-top: 26px;
+    margin-bottom: 196px;
+}
+
+/* SERVICES SECTION*/
+
+.services-section {
+    margin-bottom: 98px;
+}
+
+.services-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.services-section__item {
+    position: relative;
+    -ms-flex-preferred-size: 382px;
+        flex-basis: 382px;
+    padding-left: 82px;
+}
+
+.services-section__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 96px;
+}
+
+.services-section__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82px;
+    height: 34px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-section__item--photography::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon1.svg);
+}
+
+.services-section__item--web-design::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon2.svg);
+}
+
+.services-section__item--creativity::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon3.svg);
+}
+
+.services-section__item--seo::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon4.svg);
+}
+
+.services-section__item--css-html::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon5.svg);
+}
+
+.services-section__item--digital::before {
+    background-image: url(../img/svg_icons/services_icon/services_icon6.svg);
+}
+
+.services-section__field {
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.services-section__description {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* TEAM SECTION */
+
+.team-section {
+    margin-bottom: 82px;
+}
+
+.team-section__text {
+    margin: 44px 112px 90px;
+    padding: 0 19px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team-section__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+/* MEDIA */
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .welcome-section {
+        background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252,227,138, 0.9)), to(rgba(243,129,129, 0.9))),
+                      url(../img/banner@2x.jpg);
+        background-image: -webkit-linear-gradient(bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner@2x.jpg);
+        background-image: -o-linear-gradient(bottom, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner@2x.jpg);
+        background-image: linear-gradient(to top, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%),
+                      url(../img/banner@2x.jpg);
+    }
+}

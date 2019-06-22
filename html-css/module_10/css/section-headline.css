@@ -1,0 +1,78 @@
+/* GENERAL TYPOGRAPHY */
+
+.section-headline {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-headline::before {
+    display: block;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: none;
+}
+
+.section-headline::after {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+
+/* WELCOME SECTION TYPOGRAPHY */
+
+.welcome-section__section-headline {
+    font-size: 150px;
+    color: #fff;
+    padding-bottom: 110px;
+}
+
+.welcome-section__section-headline::before {
+    content: 'Creative Template';
+    font-size: 72px;
+    margin-bottom: 44px;
+}
+
+/* COMMON SERVICES SECTION & TEAM SECTION TYPOGRAPHY */
+
+.services-section__section-headline,
+.team-section__section-headline {
+    font-size: 30px;
+    color: #333;
+}
+
+.services-section__section-headline::before,
+.team-section__section-headline::before {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services-section__section-headline::after,
+.team-section__section-headline::after {
+    content: '';
+}
+
+/* SERVICES SECTION TYPOGRAPHY */
+
+.services-section__section-headline {
+    margin-bottom: 64px;
+}
+
+.services-section__section-headline::before {
+    content: "We work with";
+}
+
+/* TEAM SECTION TYPOGRAPHY */
+
+.team-section__section-headline {
+    margin-bottom: 44px;
+}
+
+.team-section__section-headline::before {
+    content: "Who we are";
+}
