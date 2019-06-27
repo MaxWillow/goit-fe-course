@@ -204,6 +204,10 @@ img {
     margin-right: 30px;
 }
 
+.new-collection-item-link {
+    display: block;
+}
+
 .image-wrapper {
     width: 255px;
     height: 282px;
