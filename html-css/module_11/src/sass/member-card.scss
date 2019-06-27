@@ -1,0 +1,83 @@
+.member-card {
+    position: relative;
+}
+
+.member-card__name {
+    font-family: $main-font;
+    font-size: 14px;
+    color: map-get($colors, title-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0 14px;
+}
+
+.member-card__occupation {
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.member-card__img-wrapper {
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(map-get($colors, secondary-bg), map-get($colors, secondary-bg));
+}
+
+.member-card__img {
+    @include position (absolute, 0, 0);
+    transition: top .2s linear, left .2s linear
+}
+
+.member-card__overlay {
+    opacity: 0;
+    @include position (absolute, -10px, -10px);
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(to top, map-get($colors, first-gradient-color) 0%, map-get($colors, second-gradient-color) 100%);
+    transition: opacity .2s linear;
+}
+
+.member-card__btn-wrapper {
+    width: 223px;
+    @include position (absolute, 50%, 50%);
+    transform: translate(-50%, -50%);
+    @extend %space-btw;
+}
+
+.member-card__socials {
+    padding: 0;
+    width: 55px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: map-get($colors, accent-color);
+    transition: background-color .2s linear
+}
+
+.member-card__socials-icon {
+    display: block;
+    width: 50%;
+    height: 50%;
+    fill: map-get($colors, bg-accent-color);
+    transition: fill .2s linear;
+}
+
+.member-card:hover .member-card__img {
+    top: -10px;
+    left: -10px;
+}
+
+.member-card:hover .member-card__overlay {
+    opacity: 1;
+}
+
+.member-card__socials:hover {
+    background-color: map-get($colors, bg-accent-color);
+}
+
+.member-card__socials:hover .member-card__socials-icon {
+    fill: map-get($colors, primary-white-color);
+}

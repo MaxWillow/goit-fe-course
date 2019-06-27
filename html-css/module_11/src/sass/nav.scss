@@ -1,0 +1,55 @@
+.nav {
+    @extend %space-btw;
+}
+
+.nav__list {
+    @extend %list-reset;
+    @extend %space-btw;
+    flex-basis: 620px;
+    align-items: flex-end;
+}
+
+.nav__link {
+    position: relative;
+    font-family: $main-font;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:map-get($colors, primary-white-color);
+    transition: color .2s linear;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 50%;
+        background: map-get($colors, accent-color);
+        bottom: -10px;
+        transition: all 0.2s linear;
+    }
+}
+
+.nav__icon {
+    width: 18px;
+    height: 16px;  
+    fill: map-get($colors, primary-white-color);
+}
+
+.nav__item:hover .nav__link {
+    color: map-get($colors, accent-color);
+}
+
+.nav__item:hover .nav__icon{
+    fill: map-get($colors, accent-color);
+}
+
+.nav__item:hover .nav__link::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav--welcome-section {
+    padding-top: 26px;
+    margin-bottom: 196px;
+}

@@ -1,0 +1,41 @@
+.footer__content-wrapper {
+    min-height: 62px;
+    border-top: 1px solid map-get($colors, general-border-color);
+    @extend %space-btw;
+    align-items: center;
+}
+
+.footer__legal {
+    font-family: $main-font;
+    font-size: 14px;
+    color: map-get($colors, title-color);
+}
+
+.footer__legal--who-made {
+    color: map-get($colors, bg-accent-color);
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer__email-input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid map-get($colors, general-border-color);
+    padding: 14px 12px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer__email-input::placeholder {
+    color: map-get($colors, placeholder-color);
+    text-transform: capitalize;
+}
+
+.footer__btn {
+    border: none;
+    background-color: map-get($colors, secondary-bg);
+}

@@ -1,0 +1,12 @@
+.welcome-section {
+    margin-bottom: 54px;
+    padding-bottom: 230px;
+    background-image: linear-gradient(to top, map-get($colors, first-gradient-color) 0%, map-get($colors, second-gradient-color) 100%),
+                      url(../images/banner.jpg);
+    background-size: cover;
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, map-get($colors, first-gradient-color) 0%, map-get($colors, second-gradient-color) 100%),
+                      url(../images/banner@2x.jpg);
+    }
+}

@@ -1,0 +1,14 @@
+.team-section {
+    margin-bottom: 82px;
+}
+
+.team-section__text {
+    margin: 44px 112px 90px;
+    padding: 0 19px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team-section__list {
+    @extend %list-reset, %space-btw;
+}

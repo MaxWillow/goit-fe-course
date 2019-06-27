@@ -1,0 +1,76 @@
+/* GENERAL HEADLINE STYLES */
+
+.section-headline {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &::before {
+        display: block;
+        font-family: $pre-title-font;
+        text-transform: none;
+    }
+
+    &::after {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 60px;
+        height: 3px;
+        background: map-get($colors, bg-accent-color);
+    }
+}
+
+/* WELCOME SECTION HEADLINE */
+
+.section-headline--welcome-section {
+    font-size: 150px;
+    color: map-get($colors, primary-white-color);
+    padding-bottom: 110px;
+
+    &::before {
+        content: 'Creative Template';
+        font-size: 72px;
+        margin-bottom: 44px; 
+    }
+}
+
+/* COMMON SERVICES SECTION & TEAM SECTION HEADLINE */
+
+.section-headline--services-section,
+.section-headline--team-section {
+    font-size: 30px;
+    color: map-get($colors, title-color);
+
+    &::before {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    &::after {
+        content: '';
+    }
+}
+
+/* SERVICES SECTION HEADLINE */
+
+.section-headline--services-section {
+    margin-bottom: 64px;
+
+    &::before {
+        content: "We work with";
+    }
+}
+
+/* TEAM SECTION HEADLINE */
+
+.section-headline--team-section {
+    margin-bottom: 44px;
+
+    &::before {
+        content: "Who we are";
+    }
+}
