@@ -10,6 +10,7 @@
 // const total = 100;
 // const ordered = 50;
 
+'use strict';
 const total = 200;
 const ordered = 40;
 

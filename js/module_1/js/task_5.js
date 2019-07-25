@@ -14,6 +14,7 @@
 // Индия - 80 кредитов
 // Ямайка - 120 кредитов
 
+'use strict';
 let message = prompt('Укажите страну, в которую необходимо доставить товар');
 message = message.toUpperCase();
 let deliveryCost;
