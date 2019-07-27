@@ -13,21 +13,21 @@
 // в противном случае необходимо посчитать остаток кредитов на счету и вывести сообщение 'Вы купили [число] дроидов, на счету осталось [число] кредитов.'.
 
 'use strict';
-let credits = 23580;
+const credits = 23580;
 const pricePerDroid = 3000;
-let totalPrice;
-let message = prompt('Какое количество дроидов Вы хотите приобрести?');
+let totalPrice, creditsAfterPurchase;
+const userInput = prompt('Какое количество дроидов Вы хотите приобрести?');
 
-if (message === null) {
+if (userInput === null) {
   alert('Отменено пользователем!');
 } else {
-  totalPrice = Number(message) * pricePerDroid;
+  totalPrice = Number(userInput) * pricePerDroid;
 
   if (totalPrice > credits) {
     alert('Недостаточно средств на счету!');
   } else {
-    credits = credits - totalPrice;
-    const paymentSucceed = `Вы купили ${message} дроидов, на счету осталось - ${credits} кредитов.`;
+    creditsAfterPurchase = credits - totalPrice;
+    const paymentSucceed = `Вы купили ${userInput} дроидов, на счету осталось - ${creditsAfterPurchase} кредитов.`;
     alert(paymentSucceed);
   }
 }

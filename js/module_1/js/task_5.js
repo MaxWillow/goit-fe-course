@@ -15,34 +15,38 @@
 // Ямайка - 120 кредитов
 
 'use strict';
-let message = prompt('Укажите страну, в которую необходимо доставить товар');
-message = message.toUpperCase();
-let deliveryCost;
+let userInput = prompt('Укажите страну, в которую необходимо доставить товар');
+const deliveryChina = 100;
+const deliveryChile = 250;
+const deliveryAustralia = 170;
+const deliveryIndia = 80;
+const deliveryJamaica = 120;
 
-switch (message) {
-  case 'КИТАЙ':
-    deliveryCost = 100;
-    alert(`Доставка в ${message} будет стоить ${deliveryCost} кредитов.`);
+if (userInput === null) {
+  alert('Отменено пользователем!');
+}
+
+const output = userInput.toLowerCase();
+
+switch (output) {
+  case 'китай':
+    alert(`Доставка в ${output} будет стоить ${deliveryChina} кредитов.`);
     break;
 
-  case 'ЧИЛИ':
-    deliveryCost = 250;
-    alert(`Доставка в ${message} будет стоить ${deliveryCost} кредитов.`);
+  case 'чили':
+    alert(`Доставка в ${output} будет стоить ${deliveryChile} кредитов.`);
     break;
 
-  case 'АВСТРАЛИЯ':
-    deliveryCost = 170;
-    alert(`Доставка в ${message} будет стоить ${deliveryCost} кредитов.`);
+  case 'австралия':
+    alert(`Доставка в ${output} будет стоить ${deliveryAustralia} кредитов.`);
     break;
 
-  case 'ИНДИЯ':
-    deliveryCost = 80;
-    alert(`Доставка в ${message} будет стоить ${deliveryCost} кредитов.`);
+  case 'индия':
+    alert(`Доставка в ${output} будет стоить ${deliveryIndia} кредитов.`);
     break;
 
-  case 'ЯМАЙКА':
-    deliveryCost = 120;
-    alert(`Доставка в ${message} будет стоить ${deliveryCost} кредитов.`);
+  case 'ямайка':
+    alert(`Доставка в ${output} будет стоить ${deliveryJamaica} кредитов.`);
     break;
 
   default:

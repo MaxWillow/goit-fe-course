@@ -11,11 +11,12 @@
 
 'use strict';
 const ADMIN_PASSWORD = 'jqueryismyjam';
-let message = prompt('Введите свой пароль');
+const userInput = prompt('Введите свой пароль');
+let message;
 
-if (message === null) {
+if (userInput === null) {
   message = 'Отменено пользователем!';
-} else if (message === ADMIN_PASSWORD) {
+} else if (userInput === ADMIN_PASSWORD) {
   message = 'Добро пожаловать!';
 } else {
   message = 'Доступ запрещен, неверный пароль!';
