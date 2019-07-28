@@ -16,19 +16,32 @@
 let input;
 let total = 0;
 
-while (true) {
+// while (true) {
+//   input = prompt('Введи число');
+
+//   if (input === null) {
+//     alert(`Общая сумма чисел равна ${total}.`);
+//     break;
+//   }
+
+//   input = Number(input);
+
+//   if (Number.isNaN(input) === false) {
+//     total += input;
+//   } else {
+//     alert('Было введено не число, попробуй еще раз');
+//   }
+// }
+
+do {
   input = prompt('Введи число');
-
-  if (input === null) {
-    alert(`Общая сумма чисел равна ${total}.`);
-    break;
-  }
-
   input = Number(input);
 
-  if (Number.isNaN(input) === false) {
+  if (input !== 0 && !Number.isNaN(input)) {
     total += input;
-  } else {
+  } else if (Number.isNaN(input)) {
     alert('Было введено не число, попробуй еще раз');
   }
-}
+} while (input !== 0);
+
+alert(`Общая сумма чисел равна ${total}.`);

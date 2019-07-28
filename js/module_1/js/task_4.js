@@ -15,19 +15,20 @@
 'use strict';
 const credits = 23580;
 const pricePerDroid = 3000;
-let totalPrice, creditsAfterPurchase;
+let totalPrice;
 const userInput = prompt('Какое количество дроидов Вы хотите приобрести?');
 
 if (userInput === null) {
   alert('Отменено пользователем!');
 } else {
-  totalPrice = Number(userInput) * pricePerDroid;
+  totalPrice = userInput * pricePerDroid;
 
   if (totalPrice > credits) {
     alert('Недостаточно средств на счету!');
   } else {
-    creditsAfterPurchase = credits - totalPrice;
-    const paymentSucceed = `Вы купили ${userInput} дроидов, на счету осталось - ${creditsAfterPurchase} кредитов.`;
-    alert(paymentSucceed);
+    alert(
+      `Вы купили ${userInput} дроидов, на счету осталось - ${credits -
+        totalPrice} кредитов.`,
+    );
   }
 }
