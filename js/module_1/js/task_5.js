@@ -24,31 +24,31 @@ const deliveryJamaica = 120;
 
 if (userInput === null) {
   alert('Отменено пользователем!');
-}
+} else {
+  const output = userInput.toLowerCase();
 
-const output = userInput.toLowerCase();
+  switch (output) {
+    case 'китай':
+      alert(`Доставка в ${output} будет стоить ${deliveryChina} кредитов.`);
+      break;
 
-switch (output) {
-  case 'китай':
-    alert(`Доставка в ${output} будет стоить ${deliveryChina} кредитов.`);
-    break;
+    case 'чили':
+      alert(`Доставка в ${output} будет стоить ${deliveryChile} кредитов.`);
+      break;
 
-  case 'чили':
-    alert(`Доставка в ${output} будет стоить ${deliveryChile} кредитов.`);
-    break;
+    case 'австралия':
+      alert(`Доставка в ${output} будет стоить ${deliveryAustralia} кредитов.`);
+      break;
 
-  case 'австралия':
-    alert(`Доставка в ${output} будет стоить ${deliveryAustralia} кредитов.`);
-    break;
+    case 'индия':
+      alert(`Доставка в ${output} будет стоить ${deliveryIndia} кредитов.`);
+      break;
 
-  case 'индия':
-    alert(`Доставка в ${output} будет стоить ${deliveryIndia} кредитов.`);
-    break;
+    case 'ямайка':
+      alert(`Доставка в ${output} будет стоить ${deliveryJamaica} кредитов.`);
+      break;
 
-  case 'ямайка':
-    alert(`Доставка в ${output} будет стоить ${deliveryJamaica} кредитов.`);
-    break;
-
-  default:
-    alert('В вашей стране доставка не доступна.');
+    default:
+      alert('В вашей стране доставка не доступна.');
+  }
 }
