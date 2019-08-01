@@ -14,17 +14,25 @@
 
 'use strict';
 
+// function checkForSpam(str) {
+//   const formatString = str.toLowerCase();
+//   let hasSpamWords;
+
+//   if (formatString.includes('spam') || formatString.includes('sale')) {
+//     hasSpamWords = true;
+//   } else {
+//     hasSpamWords = false;
+//   }
+
+//   return hasSpamWords;
+// }
+
 function checkForSpam(str) {
-  const formatString = str.toLowerCase();
-  let hasSpamWords;
-
-  if (formatString.includes('spam') || formatString.includes('sale')) {
-    hasSpamWords = true;
-  } else {
-    hasSpamWords = false;
-  }
-
-  return hasSpamWords;
+  // const formatString = str.toLowerCase();
+  // return formatString.includes('spam') || formatString.includes('sale');
+  return (
+    str.toLowerCase().includes('spam') || str.toLowerCase().includes('sale')
+  );
 }
 
 console.log(checkForSpam('Latest technology news')); // false

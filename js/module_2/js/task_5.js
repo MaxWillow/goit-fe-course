@@ -24,13 +24,17 @@
 'use strict';
 
 function formatString(string) {
-  let formatString;
+  // let formatString;
 
-  if (string.length <= 40) {
-    formatString = string;
-  } else {
-    formatString = string.slice(0, 41) + '...';
-  }
+  // if (string.length <= 40) {
+  //   formatString = string;
+  // } else {
+  //   formatString = string.slice(0, 41) + '...';
+  // }
+
+  // ********** ternary operator *****************
+  const formatString =
+    string.length <= 40 ? string : string.slice(0, 41) + '...';
 
   return formatString;
 }

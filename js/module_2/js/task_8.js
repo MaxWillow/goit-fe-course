@@ -56,35 +56,21 @@ const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 const userLogin = prompt('Введите свой логин');
 
 // ************************************************************************
-let isLoginValid = function(userLogin) {
-  if (userLogin.length >= 4 && userLogin.length <= 16) {
-    isLoginValid = true;
-  } else {
-    isLoginValid = false;
-  }
-  return isLoginValid;
+const isLoginValid = function(login) {
+  return login.length >= 4 && login.length <= 16;
 };
 
-console.log(isLoginValid(userLogin));
-
 // ************************************************************************
-let isLoginUnique = function(logins, userLogin) {
-  if (logins.includes(userLogin)) {
-    isLoginUnique = false;
-  } else {
-    isLoginUnique = true;
-  }
-  return isLoginUnique;
+const isLoginUnique = function(allLogins, login) {
+  return allLogins.includes(login);
 };
 
-console.log(isLoginUnique(logins, userLogin));
-
 // ************************************************************************
-const addLogin = function(logins, userLogin) {
+const addLogin = function(allLogins, login) {
   let message;
-  if (isLoginValid) {
-    if (isLoginUnique) {
-      logins.push(userLogin);
+  if (isLoginValid(login)) {
+    if (!isLoginUnique(allLogins, login)) {
+      allLogins.push(login);
       message = 'Логин успешно добавлен!';
     } else {
       message = 'Такой логин уже используется!';
@@ -92,12 +78,19 @@ const addLogin = function(logins, userLogin) {
   } else {
     message = 'Ошибка! Логин должен быть от 4 до 16 символов';
   }
-  return alert(message);
+  return message;
 };
 
-// console.log(addLogin(logins, userLogin));
+// ************************************************************************
+if (userLogin === null) {
+  alert('Отменено пользователем!');
+} else {
+  alert(addLogin(logins, userLogin));
+}
 
 // ************************************************************************
-
-addLogin(logins, userLogin);
-console.log(logins);
+// console.log(addLogin(logins, 'Ajax'));
+// console.log(addLogin(logins, 'robotGoogles'));
+// console.log(addLogin(logins, 'Zod'));
+// console.log(addLogin(logins, 'jqueryisextremelyfast'));
+// console.log(logins);

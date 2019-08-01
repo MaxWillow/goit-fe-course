@@ -20,25 +20,28 @@
 let input;
 const numbers = [];
 let total = 0;
-let newNumber;
 
 do {
   input = prompt('Введи число');
+
+  if (input === null) {
+    alert(`Общая сумма чисел равна: ${total}`);
+  }
+
   input = Number(input);
 
   if (!Number.isNaN(input)) {
     numbers.push(input);
-    console.log(numbers);
+    // console.log(numbers);
+    let arrayLastItem;
 
     for (const number of numbers) {
-      newNumber = number;
+      arrayLastItem = number;
     }
 
-    total += newNumber;
-    console.log(total);
+    total += arrayLastItem;
+    // console.log(total);
   } else {
     alert('Было введено не число, попробуй еще раз');
   }
 } while (input !== 0);
-
-alert(`Общая сумма чисел равна: ${total}`);
