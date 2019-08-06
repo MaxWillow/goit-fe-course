@@ -44,12 +44,6 @@
 //   // код
 // };
 
-// // Вызовы функции для проверки
-// addLogin(logins, 'Ajax'); // 'Логин успешно добавлен!'
-// addLogin(logins, 'robotGoogles'); // 'Такой логин уже используется!'
-// addLogin(logins, 'Zod'); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-// addLogin(logins, 'jqueryisextremelyfast'); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-
 'use strict';
 
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
@@ -67,30 +61,45 @@ const isLoginUnique = function(allLogins, login) {
 
 // ************************************************************************
 const addLogin = function(allLogins, login) {
-  let message;
-  if (isLoginValid(login)) {
-    if (!isLoginUnique(allLogins, login)) {
-      allLogins.push(login);
-      message = 'Логин успешно добавлен!';
-    } else {
-      message = 'Такой логин уже используется!';
-    }
-  } else {
-    message = 'Ошибка! Логин должен быть от 4 до 16 символов';
+  // let message;
+  // if (isLoginValid(login)) {
+  //   if (!isLoginUnique(allLogins, login)) {
+  //     allLogins.push(login);
+  //     message = 'Логин успешно добавлен!';
+  //   } else {
+  //     message = 'Такой логин уже используется!';
+  //   }
+  // } else {
+  //   message = 'Ошибка! Логин должен быть от 4 до 16 символов';
+  // }
+
+  // return message;
+
+  // ************************************************************************
+
+  if (!isLoginValid(login)) {
+    return 'Ошибка! Логин должен быть от 4 до 16 символов';
   }
-  return message;
+
+  if (isLoginUnique(allLogins, login)) {
+    return 'Такой логин уже используется!';
+  }
+
+  allLogins.push(login);
+  return 'Логин успешно добавлен!';
 };
 
 // ************************************************************************
+
 if (userLogin === null) {
   alert('Отменено пользователем!');
 } else {
   alert(addLogin(logins, userLogin));
 }
 
-// ************************************************************************
-// console.log(addLogin(logins, 'Ajax'));
-// console.log(addLogin(logins, 'robotGoogles'));
-// console.log(addLogin(logins, 'Zod'));
-// console.log(addLogin(logins, 'jqueryisextremelyfast'));
+// Вызовы функции для проверки
+console.log(addLogin(logins, 'Ajax'));
+console.log(addLogin(logins, 'robotGoogles'));
+console.log(addLogin(logins, 'Zod'));
+console.log(addLogin(logins, 'jqueryisextremelyfast'));
 // console.log(logins);

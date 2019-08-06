@@ -24,8 +24,9 @@
 'use strict';
 
 function calculateEngravingPrice(message, pricePerWord) {
-  const messageArray = message.split(' ');
-  return messageArray.length * pricePerWord;
+  // const messageArray = message.split(' ');
+  // return messageArray.length * pricePerWord;
+  return message.split(' ').length * pricePerWord;
 }
 
 console.log(

@@ -33,10 +33,7 @@ function formatString(string) {
   // }
 
   // ********** ternary operator *****************
-  const formatString =
-    string.length <= 40 ? string : string.slice(0, 41) + '...';
-
-  return formatString;
+  return string.length <= 40 ? string : string.slice(0, 41) + '...';
 }
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));

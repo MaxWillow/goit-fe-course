@@ -25,23 +25,23 @@ do {
   input = prompt('Введи число');
 
   if (input === null) {
-    alert(`Общая сумма чисел равна: ${total}`);
+    break;
   }
 
-  input = Number(input);
-
-  if (!Number.isNaN(input)) {
-    numbers.push(input);
-    // console.log(numbers);
-    let arrayLastItem;
-
-    for (const number of numbers) {
-      arrayLastItem = number;
-    }
-
-    total += arrayLastItem;
-    // console.log(total);
+  if (!Number.isNaN(Number(input))) {
+    numbers.push(Number(input));
   } else {
     alert('Было введено не число, попробуй еще раз');
   }
-} while (input !== 0);
+} while (input !== null);
+
+// console.log(numbers);
+
+if (numbers.length !== 0) {
+  for (const number of numbers) {
+    total += number;
+  }
+  alert(`Общая сумма чисел равна: ${total}`);
+} else {
+  alert('Отменено пользователем!');
+}
