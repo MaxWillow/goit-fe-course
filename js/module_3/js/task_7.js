@@ -64,7 +64,7 @@ const account = {
   getTransactionTotal(type) {
     let totalSum = 0;
     for (let i = 0; i < this.transactions.length; i += 1) {
-      if (this.transactions[i].type === type) {
+      if (this.transactions[i].type === type.toLowerCase()) {
         totalSum += this.transactions[i].amount;
       }
     }
@@ -80,5 +80,5 @@ console.log(account.withdraw(10));
 console.log(account.getBalance());
 account.getTransactionDetails(1);
 account.getTransactionTotal('deposit');
-account.getTransactionTotal('withdraw');
+account.getTransactionTotal('Withdraw');
 console.log(account.withdraw(600));
