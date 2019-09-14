@@ -1,0 +1,59 @@
+.task-headline {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #2c73d2;
+}
+
+/* Task 3 */
+#gallery {
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+}
+
+#gallery > li {
+  padding: 10px;
+  list-style: none;
+}
+
+#gallery > li > img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Task 4 */
+#counter {
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(44, 83, 100);
+}
+
+#counter > button {
+  border: none;
+  width: 100px;
+  height: 30px;
+  background: #f5af19;
+  cursor: pointer;
+}
+
+#value {
+  font-size: 30px;
+  color: #ed213a;
+}
+
+/* Task 6 */
+#validation-input.valid {
+  outline: 3px solid #4caf50;
+}
+
+#validation-input.invalid {
+  outline: 3px solid #f44336;
+}
