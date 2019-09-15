@@ -14,16 +14,24 @@ const ingredients = [
   'Приправы',
 ];
 
+// *************** Option 1 ***************  //
+
 const ul = document.querySelector('#ingredients');
+let arrWithItems = [];
 
-// for (let i = 0; i < ingredients.length; i += 1) {
-//   const li = document.createElement('li');
-//   li.textContent = ingredients[i];
-//   ul.append(li); // обновляет DOM на каждой итерации
-// }
+for (let i = 0; i < ingredients.length; i += 1) {
+  const li = document.createElement('li');
+  li.textContent = ingredients[i];
+  arrWithItems.push(li);
+}
 
-const markUp = ingredients.reduce((acc, item) => {
-  return acc + `<li>${item}</li>`;
-}, '');
+ul.innerHTML = [...arrWithItems].map(item => item.outerHTML).join('\n');
 
-ul.insertAdjacentHTML('afterbegin', markUp);
+// *************** Option 2 (faster) ***************  //
+
+//   const ul = document.querySelector('#ingredients');
+//   const markUp = ingredients.reduce((acc, item) => {
+//     return acc + `<li>${item}</li>`;
+//   }, '');
+
+//   ul.insertAdjacentHTML('afterbegin', markUp);
