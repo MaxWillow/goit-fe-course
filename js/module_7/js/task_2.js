@@ -16,16 +16,16 @@ const ingredients = [
 
 // *************** Option 1 ***************  //
 
-const ul = document.querySelector('#ingredients');
-let arrWithItems = [];
+// const ul = document.querySelector('#ingredients');
+// let arrWithItems = [];
 
-for (let i = 0; i < ingredients.length; i += 1) {
-  const li = document.createElement('li');
-  li.textContent = ingredients[i];
-  arrWithItems.push(li);
-}
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   const li = document.createElement('li');
+//   li.textContent = ingredients[i];
+//   arrWithItems.push(li);
+// }
 
-ul.innerHTML = [...arrWithItems].map(item => item.outerHTML).join('\n');
+// ul.innerHTML = [...arrWithItems].map(item => item.outerHTML).join('\n');
 
 // *************** Option 2 (faster) ***************  //
 
@@ -35,3 +35,15 @@ ul.innerHTML = [...arrWithItems].map(item => item.outerHTML).join('\n');
 //   }, '');
 
 //   ul.insertAdjacentHTML('afterbegin', markUp);
+
+// *************** Option 3 ***************  //
+
+const ul = document.querySelector('#ingredients');
+
+const items = ingredients.map(el => {
+  const li = document.createElement('li');
+  li.textContent = el;
+  return li;
+});
+
+ul.append(...items);

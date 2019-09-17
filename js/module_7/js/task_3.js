@@ -30,6 +30,11 @@ const createGalleryItem = function(obj) {
   return `<li><img src="${obj.url}" alt="${obj.alt}"></li>`;
 };
 
+// Стрелочная функция и деструкторизация
+
+// const createGalleryItem = ({ url, alt }) =>
+// `<li><img src="${url}" alt="${alt}"></li>`;
+
 const galleryMarkup = images.reduce((acc, item) => {
   return acc + createGalleryItem(item);
 }, '');
