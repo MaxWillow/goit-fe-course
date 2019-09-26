@@ -67,6 +67,7 @@ const closeBtn = document.querySelector('.lightbox__button');
 closeBtn.addEventListener('click', closeModal);
 
 const modal = document.querySelector('.lightbox');
+const modalImage = document.querySelector('.lightbox___image');
 
 function openModal() {
   modal.classList.add('is-open');
@@ -74,6 +75,7 @@ function openModal() {
 
 function closeModal() {
   modal.classList.remove('is-open');
+  modalImage.setAttribute('src', '');
 }
 
 function handleClick(e) {
@@ -81,7 +83,6 @@ function handleClick(e) {
   e.preventDefault();
   openModal();
 
-  const modalImage = document.querySelector('.lightbox___image');
   const imageURL = e.target.getAttribute('data-source');
   const imageALT = e.target.getAttribute('alt');
   modalImage.setAttribute('src', imageURL);
