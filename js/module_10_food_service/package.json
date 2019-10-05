@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
   },
-  "homepage": "https://github.com/MaxWillow/goit-fe-course/tree/master/js",
+  "homepage": "https://github.com/MaxWillow/goit-fe-course/tree/master/js/module_10_food_service/build",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
