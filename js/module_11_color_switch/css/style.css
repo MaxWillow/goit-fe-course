@@ -11,6 +11,7 @@ button {
 
 button:focus,
 button:hover {
+  outline: none;
   box-shadow: 3px 19px 29px -9px rgba(0, 0, 0, 0.7);
 }
 
@@ -18,4 +19,8 @@ button:disabled {
   background-color: #b0a8b9;
   color: #4b4453;
   cursor: auto;
+}
+
+button:disabled:hover {
+  box-shadow: none;
 }
