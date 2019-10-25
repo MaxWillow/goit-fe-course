@@ -1,5 +1,4 @@
 # production
-/build
 /node_modules
 
 # Logs
