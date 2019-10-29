@@ -9,7 +9,7 @@ export default function fetchWeather(coordinates) {
     conditions: document.querySelector('span[data-field="conditions"]'),
   };
 
-  const BASE_URL = 'http://api.weatherstack.com/current';
+  const BASE_URL = 'https://api.weatherstack.com/current';
   const ACCESS_KEY = '76f52b79ada08087aad4412affff8aa1';
 
   if (typeof coordinates === 'object') {
