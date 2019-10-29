@@ -110,9 +110,9 @@ p > span {
   outline: none;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 340px) {
   body {
-    width: 500px;
+    width: 300px;
     background-image: linear-gradient(to right, #654ea3 100%, #eaafc8);
   }
 
@@ -134,10 +134,11 @@ p > span {
 
   .weather,
   .credit {
-    width: 300px;
+    width: 250px;
   }
 
   .weather > h2 {
+    font-size: 20px;
     color: #eaafc8;
   }
 
@@ -147,5 +148,12 @@ p > span {
 
   .icon {
     width: 80px;
+  }
+}
+
+@media (min-width: 341px) and (max-width: 620px) {
+  body {
+    width: 580px;
+    background-image: linear-gradient(to right, #654ea3 100%, #eaafc8);
   }
 }
