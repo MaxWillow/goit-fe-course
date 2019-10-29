@@ -109,3 +109,43 @@ p > span {
   color: #d6effa;
   outline: none;
 }
+
+@media (max-width: 520px) {
+  body {
+    width: 500px;
+    background-image: linear-gradient(to right, #654ea3 100%, #eaafc8);
+  }
+
+  .search-form {
+    margin: 0 auto;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .search-form input {
+    width: 160px;
+  }
+
+  .search-form button {
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 6px 16px;
+  }
+
+  .weather,
+  .credit {
+    width: 300px;
+  }
+
+  .weather > h2 {
+    color: #eaafc8;
+  }
+
+  .weather > p {
+    font-size: 20px;
+  }
+
+  .icon {
+    width: 80px;
+  }
+}
