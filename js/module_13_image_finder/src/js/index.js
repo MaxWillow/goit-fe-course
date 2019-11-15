@@ -23,6 +23,8 @@ const refs = {
   btnLoadMore: document.querySelector('button[name="load-more"]'),
 };
 
+refs.btnLoadMore.setAttribute('disabled', true);
+
 refs.form.addEventListener('submit', handleSubmit);
 refs.btnLoadMore.addEventListener('click', handleClick);
 refs.galleryList.addEventListener('click', handleGalleryClick);
@@ -40,12 +42,21 @@ function handleSubmit(event) {
   clearGalleryList();
   fetchImagesService.resetPage();
   renderMarkup();
+  refs.btnLoadMore.removeAttribute('disabled');
 
   input.value = '';
 }
 
 function handleClick() {
   renderMarkup();
+
+  const lastChild = refs.galleryList.lastElementChild;
+
+  window.scroll({
+    behavior: 'smooth',
+  });
+
+  lastChild.scrollIntoView();
 }
 
 function createGalleryItemsMarkup(item) {

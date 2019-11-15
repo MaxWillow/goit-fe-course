@@ -54,6 +54,10 @@ body {
   font-weight: 700;
 }
 
+.load-more:disabled {
+  cursor: default;
+}
+
 .gallery {
   list-style: none;
   display: flex;
