@@ -25,6 +25,12 @@ const refs = {
 
 refs.form.addEventListener('submit', handleSubmit);
 refs.btnLoadMore.addEventListener('click', handleClick);
+refs.galleryList.addEventListener('click', handleGalleryClick);
+
+function handleGalleryClick(e) {
+  if (e.target === e.currentTarget) return;
+  basicLightbox.create(`<img src="${e.target.dataset.source}">`).show();
+}
 
 function handleSubmit(event) {
   event.preventDefault();
